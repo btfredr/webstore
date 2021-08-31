@@ -3,25 +3,7 @@ import Product from "./Product/Product";
 
 import useStyles from "./styles";
 
-const products = [
-  {
-    id: 1,
-    name: "Shoes",
-    description: "Running shoes",
-    price: "$5",
-    image:
-      "https://media.kohlsimg.com/is/image/kohls/3798326_Gray_Platinum?wid=600&hei=600&op_sharpen=1",
-  },
-  {
-    id: 2,
-    name: "Apple Macbook",
-    description: "Apple Macbook",
-    price: "$10",
-    image: "https://www.komplett.no/img/p/1024/1174474_1.jpg",
-  },
-];
-
-const Products = () => {
+const Products = ({ products }) => {
   const classes = useStyles();
   return (
     <main className={classes.content}>
